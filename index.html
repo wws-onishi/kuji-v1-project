@@ -199,17 +199,16 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 .strike-red-line{color:inherit;text-decoration:line-through;text-decoration-style:double;text-decoration-color:var(--red);}
 .anno-inline-red{color:var(--red);font-weight:700;}
 </style>
-</head>
-<body>
 <script>
-const code = prompt("アクセスコードを入力してください");
-
-if (code !== "kuji2026") {
-  document.open();
-  document.write('<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>アクセス拒否</title></head><body style="font-family:sans-serif;padding:40px;"><h1>アクセスできません</h1></body></html>');
+window.__AUTH_OK__ = prompt("アクセスコードを入力してください") === "kuji2026";
+if (!window.__AUTH_OK__) {
+  document.write('<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>アクセス拒否</title><style>body{font-family:sans-serif;padding:40px;margin:0;}</style></head><body><h1>アクセスできません</h1></body></html>');
   document.close();
 }
 </script>
+</head>
+<body>
+<div id="protected-content" style="display:none">
 
 <div class="cover">
   <div class="badge">INTERNAL PROJECT DOCUMENT v1.0</div>
@@ -1190,5 +1189,13 @@ if (code !== "kuji2026") {
   次版：v1.1（要件定義・技術設計・インフラシート完成後に更新）
 </div>
 </div>
+</div>
+<script>
+if (!window.__AUTH_OK__) {
+  document.body.innerHTML = '<h1 style="font-family:sans-serif;padding:40px;margin:0;">アクセスできません</h1>';
+} else {
+  document.getElementById("protected-content").style.display = "block";
+}
+</script>
 </body>
 </html>
