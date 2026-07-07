@@ -205,7 +205,9 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 const code = prompt("アクセスコードを入力してください");
 
 if (code !== "kuji2026") {
-  document.body.innerHTML = "<h1>アクセスできません</h1>";
+  document.open();
+  document.write('<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>アクセス拒否</title></head><body style="font-family:sans-serif;padding:40px;"><h1>アクセスできません</h1></body></html>');
+  document.close();
 }
 </script>
 
