@@ -157,6 +157,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 .pc-viet{background:#e8eaf6;border-color:#9fa8da;color:#3f51b5;}
 .pc-fs{background:var(--gray-light);border-color:#bdbdbd;color:var(--gray-mid);}
 .pc-biz{background:#fff8e1;border-color:#ffe082;color:#f57f17;}
+.pc-seisaku{background:#fce4ec;border-color:#f48fb1;color:#880e4f;}
 .pc-all{background:var(--red-light);border-color:#ef9a9a;color:var(--red);}
 
 /* ===== 7. RACI ===== */
@@ -201,8 +202,6 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 </style>
 </head>
 <body>
-<div id="access-denied" style="display:none"><h1 style="padding:40px;margin:0;font-family:sans-serif;">アクセスできません</h1></div>
-<template id="page-content">
 
 <div class="cover">
   <div class="badge">INTERNAL PROJECT DOCUMENT v1.0</div>
@@ -238,6 +237,19 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
     <a href="#sec12" class="toc-item"><span class="ti-num">12</span>時間軸・工程・担当フロー</a>
     <a href="#sec13" class="toc-item"><span class="ti-num">13</span>役割分担（RACI）</a>
     <a href="#sec14" class="toc-item"><span class="ti-num">14</span>スケジュール詳細</a>
+    <a href="#sec15" class="toc-item" style="background:#fff3e0;border-left:3px solid #e65100;"><span class="ti-num" style="background:#e65100;">15</span>大西の最優先設計課題</a>
+  </div>
+  <!-- 参考リンク -->
+  <div style="margin-top:16px;background:#e8eaf6;border-radius:8px;padding:12px 16px;">
+    <div style="font-size:11px;font-weight:700;color:#283593;margin-bottom:8px;">🔗 関連ツール・参考リンク</div>
+    <a href="https://ws-saas-906443761420.us-west1.run.app/" target="_blank" style="display:flex;align-items:center;gap:8px;background:white;border-radius:6px;padding:8px 12px;text-decoration:none;border:1px solid #c5cae9;margin-bottom:6px;">
+      <span style="font-size:16px;">📋</span>
+      <span>
+        <span style="font-size:11px;font-weight:700;color:#283593;display:block;">SaaS要望管理システム</span>
+        <span style="font-size:10px;color:#5c6bc0;">営業部からの機能改善要望一覧（Smart Kuji: 1件・計8件登録）</span>
+      </span>
+      <span style="margin-left:auto;font-size:10px;color:#9e9e9e;">ws-saas-906443761420.us-west1.run.app →</span>
+    </a>
   </div>
 </div>
 
@@ -426,68 +438,87 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
   <!-- 競合他社との比較 -->
   <div style="background:white;border-radius:8px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:18px;">
     <h3 style="font-size:13px;font-weight:700;color:var(--blue-dark);margin-bottom:6px;padding-bottom:6px;border-bottom:2px solid var(--blue-pale);">🏆 競合サービスとの詳細比較（実社名・スペックベース）</h3>
-    <div style="font-size:11px;color:var(--gray-mid);margin-bottom:12px;">各社LP・公開情報をもとに作成。◎=明確な優位性 ◯=対応 △=部分対応・条件あり ✕=非対応</div>
+    <div style="font-size:11px;color:var(--gray-mid);margin-bottom:12px;">各社LP・公開情報をもとに作成（2026年7月時点）。◎=明確な優位性 ◯=対応 △=部分対応・条件あり ✕=非対応 —=情報なし</div>
 
-    <!-- 競合サマリーカード -->
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+    <!-- 競合サマリーカード（6社）-->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fce4ec;border-radius:8px;padding:12px;border-top:3px solid #c62828;">
+        <div style="font-size:11px;font-weight:700;color:#b71c1c;margin-bottom:6px;">🎯 PKB（Lotlly® ロトリー）</div>
+        <div style="font-size:10px;color:var(--gray-mid);">シリアルコード特化のインスタントウィン<br>演出5種（クレーン/ガシャ/スロット等）<br>マイレージ型・可変QR・Wチャンス対応<br>ISMS認証・Pマーク取得<br>賞品発送代行・クリエイティブ制作も対応<br>⚠️ 参加方式はシリアル以外不明</div>
+      </div>
+      <div style="background:#e8eaf6;border-radius:8px;padding:12px;border-top:3px solid #3949ab;">
+        <div style="font-size:11px;font-weight:700;color:#283593;margin-bottom:6px;">📣 OWNLY（オンリー）</div>
+        <div style="font-size:10px;color:var(--gray-mid);">SNSキャンペーン管理SaaS<br>X/LINE/Instagram対応・15種以上のCP施策<br>UGC収集・フォロワー拡散・当選者抽選<br>ISO 27001取得・6ヶ月契約<br>⚠️ シリアルCP・クジラロジック非対応<br>⚠️ 景品表示法対応の記載なし</div>
+      </div>
       <div style="background:var(--blue-pale);border-radius:8px;padding:12px;border-top:3px solid var(--blue-mid);">
         <div style="font-size:11px;font-weight:700;color:var(--blue-dark);margin-bottom:6px;">🎟️ クロワッサン</div>
-        <div style="font-size:10px;color:var(--gray-mid);">ノーコードガチャ・診断ツール<br>月額5〜14万（デザイン込み）<br>初期費用：15万（一括5万）<br>⚠️ 月間1万回制限あり<br>景品表示法・クジラロジック非対応</div>
+        <div style="font-size:10px;color:var(--gray-mid);">ノーコードガチャ・診断ツール<br>月額5〜14万（デザイン込み）初期15万<br>⚠️ 月間1万回制限あり<br>⚠️ 景品表示法・クジラロジック非対応</div>
       </div>
       <div style="background:#fff8e1;border-radius:8px;padding:12px;border-top:3px solid var(--yellow);">
         <div style="font-size:11px;font-weight:700;color:#5d4037;margin-bottom:6px;">🏢 電通デジタル TONARIWA</div>
-        <div style="font-size:10px;color:var(--gray-mid);">大企業向け統合型CRMキャンペーン<br>費用：数百万〜（エンタープライズ）<br>電通グループのブランド力<br>⚠️ 中小・代理店には高コスト<br>カスタマイズ対応だがリードタイム長</div>
+        <div style="font-size:10px;color:var(--gray-mid);">大企業向け統合型CRMキャンペーン<br>費用：数百万〜（エンタープライズ）<br>⚠️ 中小・代理店には高コスト<br>⚠️ リードタイムが長い</div>
       </div>
       <div style="background:var(--green-light);border-radius:8px;padding:12px;border-top:3px solid var(--green);">
         <div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:6px;">📱 LINE公式 インスタントウィン</div>
-        <div style="font-size:10px;color:var(--gray-mid);">LINE内完結のくじ機能<br>無料〜（LINE Biz+費用のみ）<br>⚠️ LINE友だち登録が必須<br>演出・参加方式が固定<br>データ取得・管理画面が限定的</div>
+        <div style="font-size:10px;color:var(--gray-mid);">LINE内完結のくじ機能<br>無料〜（LINE Biz+費用のみ）<br>⚠️ LINE友だち登録が必須<br>⚠️ 演出・参加方式が固定</div>
       </div>
       <div style="background:var(--purple-light);border-radius:8px;padding:12px;border-top:3px solid var(--purple);">
         <div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:6px;">⚙️ 自社開発</div>
-        <div style="font-size:10px;color:var(--gray-mid);">費用：500万〜（開発費）<br>要件通りに作れる自由度<br>⚠️ 保守コスト・技術的負債が高い<br>景品表示法対応は自社で設計が必要<br>開発期間：半年〜1年</div>
+        <div style="font-size:10px;color:var(--gray-mid);">費用：500万〜（開発費）<br>⚠️ 保守コスト・技術的負債が高い<br>⚠️ 景品表示法対応は自社設計が必要<br>⚠️ 開発期間：半年〜1年</div>
       </div>
     </div>
 
-    <table class="diff-table">
+    <div style="overflow-x:auto;">
+    <table class="diff-table" style="min-width:900px;">
       <thead>
         <tr>
-          <th style="text-align:left;background:#283593;min-width:160px;">機能・特徴</th>
-          <th class="our-col">SmartKuji<br>（PHP版・新）</th>
-          <th style="background:#1565c0;">クロワッサン<br><span style="font-size:9px;opacity:0.8;">lp.croissant.buzz</span></th>
-          <th style="background:#4527a0;">電通デジタル<br>TONARIWA</th>
-          <th style="background:#00695c;">LINE公式<br>インスタントウィン</th>
-          <th style="background:#37474f;">自社開発</th>
+          <th style="text-align:left;background:#283593;min-width:150px;font-size:11px;">機能・特徴</th>
+          <th class="our-col" style="min-width:90px;">SmartKuji<br>（PHP版・新）</th>
+          <th style="background:#c62828;min-width:80px;">PKB<br><span style="font-size:8px;opacity:0.9;">Lotlly® ロトリー</span></th>
+          <th style="background:#3949ab;min-width:80px;">OWNLY<br><span style="font-size:8px;opacity:0.9;">オンリー</span></th>
+          <th style="background:#1565c0;min-width:80px;">クロワッサン</th>
+          <th style="background:#4527a0;min-width:80px;">電通DG<br>TONARIWA</th>
+          <th style="background:#00695c;min-width:80px;">LINE公式<br>IW</th>
+          <th style="background:#37474f;min-width:80px;">自社開発</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>⚡ 大規模アクセス耐性</strong></td>
+          <td><strong>⚡ 大規模同時アクセス</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">目標10,000同時</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">サーバー増強<br>オプション対応</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">SNS基盤依存</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">月間1万回制限</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">要件次第</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">LINE側依存</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">構成次第</span></td>
         </tr>
         <tr>
-          <td><strong>💰 月額費用</strong></td>
+          <td><strong>💰 月額費用感</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">5万〜（現行水準）</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">非公開<br>要見積もり</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">非公開<br>6ヶ月契約</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">5〜14万/月<br>初期15万</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">数百万〜</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">無料〜</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">開発費500万〜</span></td>
         </tr>
         <tr>
-          <td><strong>🎮 ゲーム演出の多様性</strong></td>
-          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">5種（カード/スクラッチ/<br>ビンゴ/スロット/GIF）</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">ガチャ・診断のみ<br>くじ特化でない</span></td>
+          <td><strong>🎮 ゲーム演出の種類</strong></td>
+          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">5種<br>カード/スクラッチ/<br>ビンゴ/スロット/GIF</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">5種<br>クレーン/ガシャ/<br>スロット/ルーレット/<br>ガラガラ</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">SNS内固定<br>演出選択なし</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">ガチャ・診断<br>のみ</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">要件次第</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;">固定演出のみ</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;">固定のみ</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">開発すれば可</span></td>
         </tr>
         <tr>
           <td><strong>🔗 参加方式の多様性</strong></td>
-          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">5種<br>(メール/シリアル/<br>制限なし/API/LINE)</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">URLアクセスのみ<br>シリアル非対応</span></td>
+          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">5種<br>メール/シリアル/<br>制限なし/API/LINE</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">シリアル特化<br>他方式不明</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">X/LINE/<br>Instagram/<br>特設ページ<br>※シリアルなし</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">URLアクセス<br>のみ</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">要件次第</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;">LINE固定</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
@@ -495,46 +526,78 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <tr>
           <td><strong>🎰 クジラロジック<br>（確率スケジュール）</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">日時別確率自動切替<br>在庫管理・スケジュール</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">非対応</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">非対応</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">確率変更は<br>手動・管理画面<br>コードカテゴリ<br>識別あり</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">確率スケジュール<br>非対応</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">設計次第</span></td>
         </tr>
         <tr>
           <td><strong>⚖️ 景品表示法対応<br>（自動在庫出し切り）</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">自動で法令準拠を担保</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">非対応<br>（ガチャ演出のみ）</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">要件次第</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">記載なし<br>（確率変更可なので<br>手動対応は可）</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">記載なし</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
         </tr>
         <tr>
-          <td><strong>🧾 レシートCP連携<br>（SmartRecieco）</strong></td>
-          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">API 1・2 深い統合</span></td>
+          <td><strong>🧾 レシートCP連携</strong></td>
+          <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">SmartRecieco<br>API深い統合</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">レシート投稿<br>機能あり<br>（深い統合なし）</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
         </tr>
         <tr>
-          <td><strong>🎨 フロー自由設計<br>（カスタマイズ）</strong></td>
+          <td><strong>🎨 フロー自由設計</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">自由なフロー組み立て</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">ガチャ・診断に限定</span></td>
-          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">コスト・時間がかかる</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">オリジナル<br>デザイン対応<br>アニメ・音声も可</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">CMS形式で<br>特設ページ設定可</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">ガチャ・診断<br>に限定</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">コスト・<br>時間がかかる</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">コスト高</span></td>
         </tr>
         <tr>
-          <td><strong>🧙 ノーコード設定<br>（UI使いやすさ）</strong></td>
+          <td><strong>🧙 管理画面の使いやすさ</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">ウィザード化（新）</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">直感的・デザイン代行付</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">不明</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">CMS形式で<br>直感的・簡単設定</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">直感的<br>デザイン代行付</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">大企業向けUI</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">LINE管理画面</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
         </tr>
         <tr>
+          <td><strong>📊 マイレージ型<br>（ポイント累積）</strong></td>
+          <td class="our-col"><span class="triangle">△</span><br><span style="font-size:10px;">要件次第（検討中）</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">ポイント累積型<br>対応</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">マイレージ型<br>マストバイ対応</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
+        </tr>
+        <tr>
+          <td><strong>📱 SNS拡散・<br>フォロワー獲得</strong></td>
+          <td class="our-col"><span class="triangle">△</span><br><span style="font-size:10px;">LINE連携のみ</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">X/LINE/<br>Instagram<br>リポスト拡散<br>UGC収集</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">LINE友だち獲得</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+        </tr>
+        <tr>
           <td><strong>🏪 店舗分割CP</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">300店舗対応（予定）</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">スタンプラリー<br>機能と組み合わせ可</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
@@ -543,14 +606,18 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <tr>
           <td><strong>🔒 セキュリティ認証</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">ISO 27001・Pマーク<br>AWS Shield/WAF</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">ISMS認証<br>Pマーク取得</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">ISO 27001<br>取得</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">記載なし</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;">電通グループ基準</span></td>
-          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">LINE側のセキュリティ</span></td>
-          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;">自社で取得要</span></td>
+          <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">LINE側基準</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
         </tr>
         <tr>
           <td><strong>🤖 AI機能</strong></td>
-          <td class="our-col">◯<br><span style="font-size:10px;">将来実装（文章/画像生成）</span></td>
+          <td class="our-col">◯<br><span style="font-size:10px;">将来実装<br>（文章/画像生成）</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
+          <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
@@ -558,22 +625,24 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         </tr>
       </tbody>
     </table>
+    </div>
 
     <!-- 勝てる顧客セグメント -->
     <div style="margin-top:16px;background:#e8f5e9;border-radius:8px;padding:14px 18px;border-left:4px solid var(--green);">
       <div style="font-size:12px;font-weight:700;color:var(--green);margin-bottom:8px;">✅ SmartKujiが競合に勝てる顧客セグメント（バージョンアップ後）</div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:11px;">
-        <div><strong>vs クロワッサン</strong><br>・シリアルCP案件（QR配布・ポスター）<br>・景品表示法対応が必須の食品・飲料<br>・月間1万回を超える大量参加CP<br>・LINE Login連携が必要な案件</div>
-        <div><strong>vs 電通デジタルTONARIWA</strong><br>・予算1,000万円以下の中規模CP<br>・中小企業・代理店ルートの案件<br>・短納期（5営業日〜）が必要な案件<br>・スモールスタートで試したいクライアント</div>
-        <div><strong>vs LINE公式・自社開発</strong><br>・LINE以外の参加方式が必要な案件<br>・保守コストを下げたい既存自社開発<br>・複数の演出タイプを使い分けたい案件<br>・SmartRecieco連携を組み合わせたい案件</div>
+        <div><strong>vs PKB（Lotlly®）</strong><br>・シリアル＋メール/LINE/API/制限なしの複合型案件<br>・クジラロジック自動確率制御が必要な案件<br>・景品表示法の自動担保が必要な食品・飲料<br>・SmartRecieco（レシートCP）との組み合わせ案件</div>
+        <div><strong>vs OWNLY（オンリー）</strong><br>・SNS以外の参加方式（シリアル/メール/API）が必要な案件<br>・くじ演出（スクラッチ/ビンゴ等）が必要な案件<br>・景品表示法の自動在庫管理が必要な法令対応案件<br>・確率スケジュール管理が必要な大規模マストバイ</div>
+        <div><strong>vs クロワッサン・電通DG・LINE公式</strong><br>・シリアルCP案件（QR配布・ポスター）<br>・予算1,000万円以下の中規模CP<br>・LINE以外の参加方式が必要な案件<br>・保守コストを下げたい既存自社開発からの移行</div>
       </div>
     </div>
 
-    <!-- クロワッサンから学ぶ改善ポイント -->
+    <!-- 競合から学ぶ改善ヒント -->
     <div style="margin-top:12px;background:var(--yellow-light);border-radius:8px;padding:14px 18px;border-left:4px solid var(--yellow);">
-      <div style="font-size:12px;font-weight:700;color:var(--yellow);margin-bottom:8px;">💡 クロワッサンの強みから学ぶ改善ヒント</div>
-      <div style="font-size:11px;color:var(--gray-dark);">
-        クロワッサンはUI/UXの直感性・デザイン代行サービス・豊富な成功事例の見せ方で差別化している。SmartKujiのバージョンアップでも、①管理画面のウィザード化（操作性改善）②事例集の充実③クライアントが設定できるデザインテンプレートの提供を重点化することで、クロワッサンのターゲット層（中小・ノーコード志向）にも訴求できる。
+      <div style="font-size:12px;font-weight:700;color:var(--yellow);margin-bottom:8px;">💡 競合から学ぶ改善ヒント</div>
+      <div style="font-size:11px;color:var(--gray-dark);display:grid;grid-template-columns:repeat(2,1fr);gap:10px;">
+        <div><strong>PKBから：</strong>クレーンゲームやガラガラなどユニーク演出の追加検討。マイレージ型（ポイント累積）はPKB・OWNLYが対応しておりSmartKujiに不足。今後の機能拡張候補として優先度を検討すること。</div>
+        <div><strong>OWNLYから：</strong>SNS連携強化（X/Instagram対応）とUGC収集機能は差別化余地がある。クロワッサン・OWNLYのノーコードUI・デザインテンプレートの充実度が高く、SmartKujiのウィザード化と合わせてテンプレート提供も強化すること。</div>
       </div>
     </div>
   </div>
@@ -796,6 +865,12 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 <!-- ===== 9. フロントエンド機能要件 ===== -->
 <div class="section" id="sec9">
   <div class="section-title"><span class="num">9</span>フロントエンド機能要件<s class="strike-red-line">（確定）</s></div>
+  <div style="margin-bottom:14px;">
+    <a href="https://ws-saas-906443761420.us-west1.run.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#e8eaf6;border:1px solid #c5cae9;border-radius:6px;padding:6px 12px;text-decoration:none;font-size:11px;color:#283593;font-weight:600;">
+      📋 SaaS要望管理システム（営業部からの要望一覧）→
+    </a>
+    <span style="font-size:10px;color:var(--gray-mid);margin-left:8px;">※要望No.0004「シリアルコード自動発行・登録機能」を本セクションに反映済み</span>
+  </div>
   <div class="req-section">
     <h3>🖥️ 管理画面 フロントエンド要件</h3>
     <table class="req-table">
@@ -810,6 +885,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <tr><td><strong>利用者状況</strong></td><td>日次カレンダー表示（在庫消化・確率スケジュール）。年月切り替え。賞品別在庫消化グラフ</td><td><span class="tag tag-mid">高</span></td><td><span class="tag tag-todo">未着手</span></td></tr>
         <tr><td><strong>管理者ロール分離</strong></td><td>一般管理者：自身のCPのみ表示・操作。スーパー管理者：全CP操作・ドメイン制限設定</td><td><span class="tag tag-mid">高</span></td><td><span class="tag tag-todo">未着手</span></td></tr>
         <tr><td><strong>シリアルコード管理UI</strong><br><span style="font-size:10px;color:var(--purple);">📋 要望No.0004（4票）</span></td><td>シリアルコード自動発行UIを管理画面に追加。文字種（英数字・記号）・桁数・接頭辞・発行枚数を設定するフォーム。発行プレビュー（サンプル表示）・発行後の一覧確認・CSVダウンロード。重複チェック結果をリアルタイム表示。発行ルール保存機能（次回同CPで再利用）</td><td><span class="tag tag-mid">高</span></td><td><span class="tag tag-todo">未着手</span></td></tr>
+        <tr style="background:#e3f2fd;"><td><strong>🤖 設定連動型プレビュー<br>（ユーザー画面自動生成）</strong><br><span style="font-size:10px;color:var(--blue-mid);">新規機能</span></td><td>管理画面ウィザード内のプレビューパネルを拡張し、設定ON/OFFに連動してユーザー画面フロー全体を自動生成・リアルタイム表示する。①<strong>フロー図モード</strong>：参加方式・ゲーム・フォーム・消込の有無に応じて、ユーザーが辿る画面遷移をフロー図（Mermaid.js等）で表示。②<strong>画面プレビューモード</strong>：各画面の実レンダリングをステップ形式で確認できるビューア。③<strong>時系列ステートセレクタ</strong>：CP開始前 / 参加受付中（当選）/ 参加受付中（はずれ）/ 在庫切れ / 期限切れ / CP終了後を切り替えて各状態の画面を確認。④<strong>エクスポート</strong>：フロー図・画面キャプチャをPNG/PDFで一括ダウンロード（営業資料・説明マニュアル用途）。</td><td><span class="tag tag-mid">高</span></td><td><span class="tag tag-todo">未着手</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -853,6 +929,58 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
       </tbody>
     </table>
   </div>
+
+  <!-- ★ 新機能：設定連動型ユーザー画面自動生成エンジン -->
+  <div class="req-section" style="border:2px solid var(--blue-mid);border-radius:8px;padding:16px;">
+    <h3 style="color:var(--blue-dark);">🤖 設定連動型ユーザー画面自動生成エンジン <span style="font-size:11px;background:var(--blue-mid);color:white;border-radius:4px;padding:2px 8px;font-weight:600;vertical-align:middle;">新規機能</span></h3>
+
+    <!-- 目的 -->
+    <div style="background:var(--blue-pale);border-radius:6px;padding:12px 14px;margin-bottom:14px;font-size:11px;">
+      <div style="font-weight:700;color:var(--blue-dark);margin-bottom:6px;">🎯 目的：以下の業務を自動化・時間短縮する</div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+        <div style="display:flex;gap:6px;align-items:flex-start;"><span style="background:var(--blue-mid);color:white;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700;flex-shrink:0;">①</span><span><strong>営業のデモ作成・資料作成</strong>：設定を入力するだけで即座にデモ画面が生成され、資料・スクリーンショットとして活用できる</span></div>
+        <div style="display:flex;gap:6px;align-items:flex-start;"><span style="background:var(--blue-mid);color:white;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700;flex-shrink:0;">②</span><span><strong>サンプルデータのバリエーション作成</strong>：ゲーム種・参加方式・賞品等をON/OFFするごとに画面が自動更新されるため、複数パターンのデモを瞬時に比較できる</span></div>
+        <div style="display:flex;gap:6px;align-items:flex-start;"><span style="background:var(--blue-mid);color:white;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700;flex-shrink:0;">③</span><span><strong>受注後の顧客への説明マニュアル作成</strong>：確定設定から自動生成したフロー図・画面キャプチャをそのまま説明資料に転用できる</span></div>
+        <div style="display:flex;gap:6px;align-items:flex-start;"><span style="background:var(--blue-mid);color:white;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700;flex-shrink:0;">④</span><span><strong>時系列ごとの画面確認</strong>：CP期間前・期間中・期間後・在庫切れ・当選/はずれなど各状態の画面を時系列で一覧確認できる</span></div>
+      </div>
+    </div>
+
+    <table class="req-table">
+      <thead><tr><th style="width:200px;">機能</th><th>要件内容</th><th style="width:70px;">優先度</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>設定→フロー自動生成API</strong></td>
+          <td>CP設定（参加方式・ゲーム種・賞品・フォーム有無・消込有無・LINE連携有無 等）の各フラグをON/OFFすると、バックエンドがユーザー画面の遷移フロー定義をJSONで生成する。フロー定義には「画面ID・画面名・表示条件・次遷移先一覧」を含む。<br>API: <code>GET /campaigns/{id}/preview-flow</code></td>
+          <td><span class="tag tag-mid">高</span></td>
+        </tr>
+        <tr>
+          <td><strong>設定反映型プレビューレンダリング</strong></td>
+          <td>生成されたフロー定義を元に、各画面（TOP/エントリー/ゲーム演出/結果/フォーム/消込）の実レンダリングをサーバーサイドまたはSPA上でリアルタイムに表示する。管理画面のウィザード各ステップで設定変更するたびにプレビューパネルが自動更新される（フロント側のリアルタイムプレビューとBEフロー生成を連携）。</td>
+          <td><span class="tag tag-mid">高</span></td>
+        </tr>
+        <tr>
+          <td><strong>時系列状態シミュレーション</strong></td>
+          <td>「CP開始前 / 参加受付中（当選あり）/ 参加受付中（はずれ）/ 在庫切れ / フォーム入力期限切れ / CP終了後」の各状態を選択すると、その時点でユーザーが見る画面を正確にレンダリングして返す。<br>API: <code>GET /campaigns/{id}/preview?state={phase}&amp;result={win|lose}</code></td>
+          <td><span class="tag tag-mid">高</span></td>
+        </tr>
+        <tr>
+          <td><strong>フロー図データ出力</strong></td>
+          <td>生成したユーザー画面フローを構造化データ（JSON/SVG）で出力するAPI。フロントエンドがMermaid.js等でフロー図をレンダリングし、画像エクスポート（PNG/PDF）が可能な形式で提供する。営業資料・説明マニュアルへの貼り付け用途を想定。<br>API: <code>GET /campaigns/{id}/preview-flow/export?format={json|svg}</code></td>
+          <td><span class="tag tag-low">中</span></td>
+        </tr>
+        <tr>
+          <td><strong>サンプルデータ注入</strong></td>
+          <td>プレビュー用のサンプルデータ（架空の当選者名・賞品名・QRコード等）をBEが自動生成してプレビュー画面に注入する。実データ不要でデモ環境を即時構築できる。サンプルデータのテンプレートは管理画面から登録・切り替え可能とする。</td>
+          <td><span class="tag tag-low">中</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 他社との差別化ポイント -->
+    <div style="margin-top:10px;background:#e8f5e9;border-radius:6px;padding:10px 14px;font-size:11px;border-left:3px solid var(--green);">
+      <strong style="color:var(--green);">🏆 競合優位性：</strong>PKB（Lotlly®）・OWNLY・クロワッサン等の競合サービスには設定→自動フロー生成機能は存在しない。営業が自分でデモを作れる・変更できる体験はSmartKujiの独自強みとなり得る。
+    </div>
+  </div>
 </div>
 
 <!-- ===== 11. FE×BE 結合方針 ===== -->
@@ -869,6 +997,13 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
       <tr><td><strong>画像アップロード</strong></td><td>ドラッグ＆ドロップUI・プレビュー</td><td>POST /images（S3 Presigned URL取得）</td><td>FEがPresigned URLに直接PUT。完了後にAPIへURLを通知</td><td>Viet-san/大西</td></tr>
       <tr><td><strong>LINE参加フロー</strong></td><td>LINE SDK・リダイレクト処理</td><td>GET /auth/line（認証開始）GET /auth/line/callback</td><td>LINE LoginコールバックをBEで処理。セッション確立後FEへリダイレクト</td><td>大西</td></tr>
       <tr><td><strong>管理者認証</strong></td><td>ログインフォーム・セッション管理</td><td>POST /admin/login POST /admin/logout</td><td>Laravel Sanctumトークン。ロール（一般/スーパー）によりFEのルート分岐</td><td>大西</td></tr>
+      <tr style="background:#e3f2fd;">
+        <td><strong>🤖 設定連動型<br>ユーザー画面自動生成</strong><br><span style="font-size:10px;color:var(--blue-mid);">新規機能</span></td>
+        <td>管理画面のプレビューパネル。設定変更のたびにリアルタイム更新。時系列状態セレクタ。フロー図表示・画像エクスポートUI</td>
+        <td>GET /campaigns/{id}/preview-flow<br>GET /campaigns/{id}/preview?state={phase}&amp;result={win|lose}<br>GET /campaigns/{id}/preview-flow/export</td>
+        <td>ウィザード各ステップでの設定変更をdebounceしてAPIへ送信。BEがフロー定義JSONを返却→FEがMermaid.jsでフロー図レンダリング。状態セレクタ切り替え時は即座にプレビュー更新。エクスポートボタンでSVG/PNG化</td>
+        <td>大西 / Viet-san</td>
+      </tr>
       <tr><td><strong>シリアルコード発行・管理</strong><br><span style="font-size:10px;color:var(--purple);">📋 要望No.0004</span></td><td>発行ルール設定フォーム・プレビュー・発行実行UI</td><td>POST /serials/generate（コード生成＆DB登録）GET /serials（一覧取得）GET /serials/export（CSV）</td><td>FEでルール設定→APIがバックグラウンドで一括生成・INSERT→完了通知。大量発行（1万枚超）はキュー経由で非同期処理</td><td>大西</td></tr>
     </tbody>
   </table>
@@ -888,7 +1023,8 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
     <span class="person-chip pc-nishiwaki">西脇（インフラ）</span>
     <span class="person-chip pc-viet">Viet-san（FE実装）</span>
     <span class="person-chip pc-fs">FS担当（インフラ）</span>
-    <span class="person-chip pc-biz">事業開発部（テスト）</span>
+    <span class="person-chip pc-biz">事業開発部</span>
+    <span class="person-chip pc-seisaku">制作担当（最終デザイン）</span>
   </div>
 
   <div class="flow-wrap">
@@ -965,23 +1101,33 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
       <div class="fr-cell"></div>
     </div>
 
-    <!-- FE実装行 -->
+    <!-- Claude Design プロトタイプ行 -->
     <div class="flow-row">
-      <div class="fr-label">🎨 フロントエンド実装<br><span style="font-size:9px;font-weight:400;color:var(--gray-mid);">Viet-san・コーダー</span></div>
+      <div class="fr-label">🖼️ UIプロトタイプ<br><span style="font-size:9px;font-weight:400;color:var(--gray-mid);">Claude Design（大西・山崎）</span></div>
+      <div class="fr-cell"><div class="bar bar-design" style="width:80%;margin-left:20%;background:#8e24aa;">大西・山崎</div></div>
       <div class="fr-cell"></div>
-      <div class="fr-cell"><div class="bar bar-dev" style="width:100%;">Viet-san（実装）</div></div>
-      <div class="fr-cell"><div class="bar bar-dev" style="width:100%;">Viet-san（継続）</div></div>
-      <div class="fr-cell"><div class="bar bar-dev" style="width:60%;">FB修正</div></div>
+      <div class="fr-cell"></div>
+      <div class="fr-cell"></div>
       <div class="fr-cell"></div>
     </div>
 
-    <!-- コーディング行 -->
+    <!-- 制作担当 最終デザイン行 -->
     <div class="flow-row">
-      <div class="fr-label">🖌️ コーディング<br><span style="font-size:9px;font-weight:400;color:var(--gray-mid);">コーダー（未定）</span></div>
+      <div class="fr-label">🎨 最終デザイン仕上げ<br><span style="font-size:9px;font-weight:400;color:var(--gray-mid);">制作担当（プロトタイプ基に）</span></div>
       <div class="fr-cell"></div>
-      <div class="fr-cell"><div class="bar bar-dev" style="width:80%;background:#43a047;">コーダー</div></div>
-      <div class="fr-cell"><div class="bar bar-dev" style="width:100%;background:#43a047;">コーダー（継続）</div></div>
+      <div class="fr-cell"><div class="bar bar-design" style="width:50%;background:#880e4f;">制作担当</div></div>
       <div class="fr-cell"></div>
+      <div class="fr-cell"></div>
+      <div class="fr-cell"></div>
+    </div>
+
+    <!-- FE実装行 -->
+    <div class="flow-row">
+      <div class="fr-label">💻 フロントエンド実装<br><span style="font-size:9px;font-weight:400;color:var(--gray-mid);">Viet-san（制作デザインをもとに）</span></div>
+      <div class="fr-cell"></div>
+      <div class="fr-cell"><div class="bar bar-dev" style="width:50%;margin-left:50%;">Viet-san（実装）</div></div>
+      <div class="fr-cell"><div class="bar bar-dev" style="width:100%;">Viet-san（継続）</div></div>
+      <div class="fr-cell"><div class="bar bar-dev" style="width:60%;">FB修正</div></div>
       <div class="fr-cell"></div>
     </div>
 
@@ -1080,9 +1226,36 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 <!-- ===== 13. 役割分担（RACI） ===== -->
 <div class="section" id="sec13">
   <div class="section-title"><span class="num">13</span>役割分担（RACI）</div>
+
+  <!-- 事業開発部の先行定義フロー -->
+  <div style="background:linear-gradient(135deg,#e8eaf6,#e3f2fd);border-radius:10px;padding:16px 20px;margin-bottom:16px;border-left:4px solid #3949ab;">
+    <div style="font-size:12px;font-weight:700;color:#283593;margin-bottom:10px;">📌 事業開発部の責任範囲と意思決定フロー</div>
+    <div style="font-size:11px;color:#37474f;margin-bottom:12px;">事業開発部はプロジェクト最上流において以下の3点を<strong>最初に定義し確定させる責任</strong>を持つ。この定義が確定した後に、営業部との機能要件すり合わせ・開発チームへの要件伝達に進む。</div>
+    <!-- フロー矢印 -->
+    <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;">
+      <div style="background:#3949ab;color:white;border-radius:8px;padding:10px 14px;font-size:11px;min-width:130px;text-align:center;">
+        <div style="font-size:13px;margin-bottom:3px;">🏢 事業開発部</div>
+        <div style="font-weight:700;margin-bottom:4px;">①先行定義</div>
+        <div style="font-size:10px;opacity:0.9;">・サービスの方向性<br>・差別化ポイント<br>・ターゲティング</div>
+      </div>
+      <div style="font-size:18px;color:#3949ab;margin:0 8px;">→</div>
+      <div style="background:#1565c0;color:white;border-radius:8px;padding:10px 14px;font-size:11px;min-width:130px;text-align:center;">
+        <div style="font-size:13px;margin-bottom:3px;">🤝 事業開発部 × 営業部</div>
+        <div style="font-weight:700;margin-bottom:4px;">②機能要件すり合わせ</div>
+        <div style="font-size:10px;opacity:0.9;">定義に基づき営業観点の<br>機能要望を照合・整理<br>優先度・実現可否を協議</div>
+      </div>
+      <div style="font-size:18px;color:#3949ab;margin:0 8px;">→</div>
+      <div style="background:#00695c;color:white;border-radius:8px;padding:10px 14px;font-size:11px;min-width:130px;text-align:center;">
+        <div style="font-size:13px;margin-bottom:3px;">⚙️ 開発チーム</div>
+        <div style="font-weight:700;margin-bottom:4px;">③機能要件確定・実装</div>
+        <div style="font-size:10px;opacity:0.9;">確定した要件をBE/FE要件表<br>に落とし込み開発着手<br>変更は事業開発部A承認要</div>
+      </div>
+    </div>
+  </div>
+
   <div style="display:flex;gap:16px;font-size:11px;margin-bottom:10px;flex-wrap:wrap;">
     <span><span class="r">R</span> 実行責任</span>
-    <span><span class="a">A</span> 説明責任</span>
+    <span><span class="a">A</span> 説明責任（最終承認権限）</span>
     <span><span class="c">C</span> 協議対象</span>
     <span><span class="i">I</span> 情報共有</span>
   </div>
@@ -1098,26 +1271,106 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <th>西脇<br>インフラ</th>
         <th>Viet<br>FE実装</th>
         <th>FS<br>インフラ</th>
-        <th>事業開発部<br>テスト</th>
+        <th>事業開発部</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="phase-name">プロジェクト管理・進行</td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td></tr>
-      <tr><td class="phase-name">営業要件・UI要望取りまとめ</td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="a">A</span></td><td>－</td><td>－</td><td>－</td><td>－</td><td>－</td></tr>
-      <tr><td class="phase-name">機能要件定義</td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td></tr>
+      <!-- ★ フェーズ0：事業開発部の先行定義 -->
+      <tr style="background:#e8eaf6;">
+        <td colspan="10" style="font-size:10px;font-weight:700;color:#3949ab;padding:5px 10px;letter-spacing:0.05em;">
+          ▼ PHASE 0：事業開発部 先行定義フェーズ（機能要件確定の前提）
+        </td>
+      </tr>
+      <tr>
+        <td class="phase-name"><strong>サービス方向性の定義</strong><br><span style="font-size:10px;color:#3949ab;">🔑 事業開発部が先行確定</span></td>
+        <td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="a">A</span></td><td>－</td><td>－</td><td>－</td><td>－</td><td><span class="r">R</span></td>
+      </tr>
+      <tr>
+        <td class="phase-name"><strong>差別化ポイントの定義</strong><br><span style="font-size:10px;color:#3949ab;">🔑 事業開発部が先行確定</span></td>
+        <td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="a">A</span></td><td>－</td><td>－</td><td>－</td><td>－</td><td><span class="r">R</span></td>
+      </tr>
+      <tr>
+        <td class="phase-name"><strong>ターゲティング・ポジショニング定義</strong><br><span style="font-size:10px;color:#3949ab;">🔑 事業開発部が先行確定</span></td>
+        <td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="a">A</span></td><td>－</td><td>－</td><td>－</td><td>－</td><td><span class="r">R</span></td>
+      </tr>
+      <!-- ★ フェーズ1：すり合わせ -->
+      <tr style="background:#e3f2fd;">
+        <td colspan="10" style="font-size:10px;font-weight:700;color:#1565c0;padding:5px 10px;letter-spacing:0.05em;">
+          ▼ PHASE 1：事業開発部 × 営業部 機能要件すり合わせフェーズ
+        </td>
+      </tr>
+      <tr>
+        <td class="phase-name">プロジェクト管理・進行</td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td></tr>
+      <tr><td class="phase-name">営業要件・UI要望取りまとめ</td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="a">A</span></td><td>－</td><td>－</td><td>－</td><td>－</td><td><span class="c">C</span></td></tr>
+      <tr><td class="phase-name">機能要件確定<br><span style="font-size:10px;color:#1565c0;">※事業開発部定義に基づき整合</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td></tr>
+      <tr>
+        <td class="phase-name"><strong>UIデザインプロトタイプ作成<br>（Claude Design）</strong><br><span style="font-size:10px;color:#1565c0;">機能要件確定後に着手</span></td>
+        <td><span class="i">I</span></td>
+        <td><span class="r">R</span></td>
+        <td><span class="r">R</span></td>
+        <td><span class="c">C</span></td>
+        <td><span class="i">I</span></td>
+        <td>－</td>
+        <td><span class="c">C</span></td>
+        <td>－</td>
+        <td><span class="i">I</span></td>
+      </tr>
+      <!-- ★ フェーズ2：設計・開発フェーズ -->
+      <tr style="background:#e8f5e9;">
+        <td colspan="10" style="font-size:10px;font-weight:700;color:#2e7d32;padding:5px 10px;letter-spacing:0.05em;">
+          ▼ PHASE 2：設計・開発フェーズ
+        </td>
+      </tr>
       <tr><td class="phase-name">アプリケーション設計</td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td></tr>
       <tr><td class="phase-name">サーバー・インフラ設計</td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td>－</td><td><span class="r">R</span></td><td>－</td></tr>
       <tr><td class="phase-name">見積・承認</td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td><td>－</td></tr>
-      <tr><td class="phase-name">FE実装（管理・参加者画面）</td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td><td>－</td><td><span class="r">R</span></td><td>－</td><td>－</td></tr>
+      <tr>
+        <td class="phase-name"><strong>最終デザイン仕上げ</strong><br><span style="font-size:10px;color:#880e4f;">🎨 制作担当：プロトタイプを基に最終仕上げ</span></td>
+        <td><span class="i">I</span></td>
+        <td><span class="c">C</span></td>
+        <td><span class="a">A</span></td>
+        <td><span class="i">I</span></td>
+        <td>－</td>
+        <td>－</td>
+        <td><span class="c">C</span></td>
+        <td>－</td>
+        <td>－</td>
+      </tr>
+      <tr><td class="phase-name">FE実装（管理・参加者画面）<br><span style="font-size:10px;color:#2e7d32;">※制作デザインをもとにVietが実装</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td><td>－</td><td><span class="r">R</span></td><td>－</td><td>－</td></tr>
       <tr><td class="phase-name">BE実装（API・抽選エンジン）</td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td>－</td><td>－</td></tr>
       <tr><td class="phase-name">AWS環境構築</td><td><span class="i">I</span></td><td>－</td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td>－</td><td><span class="r">R</span></td><td>－</td></tr>
+      <!-- ★ フェーズ3：テスト・リリース -->
+      <tr style="background:#fff3e0;">
+        <td colspan="10" style="font-size:10px;font-weight:700;color:#e65100;padding:5px 10px;letter-spacing:0.05em;">
+          ▼ PHASE 3：テスト・リリースフェーズ
+        </td>
+      </tr>
       <tr><td class="phase-name">負荷試験（1000RPS）</td><td><span class="i">I</span></td><td>－</td><td><span class="r">R</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td><td><span class="r">R</span></td><td>－</td><td><span class="r">R</span></td><td>－</td></tr>
-      <tr><td class="phase-name">STGテスト・FB</td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td></tr>
+      <tr><td class="phase-name">STGテスト・FB<br><span style="font-size:10px;color:#e65100;">事業開発部が方向性観点で最終確認</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td></tr>
       <tr><td class="phase-name">営業・UAT確認</td><td><span class="r">R</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="a">A</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td></tr>
       <tr><td class="phase-name">デモ公開・本番リリース</td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="r">R</span></td><td><span class="a">A</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td></tr>
       <tr><td class="phase-name">社内MTG（第1〜6回）進行</td><td><span class="r">R</span></td><td><span class="r">R</span></td><td><span class="r">R</span></td><td><span class="r">R</span></td><td><span class="c">C</span></td><td><span class="c">C</span></td><td><span class="i">I</span></td><td><span class="i">I</span></td><td><span class="c">C</span></td></tr>
     </tbody>
   </table>
+
+  <!-- 事業開発部の具体的責任一覧 -->
+  <div style="margin-top:14px;background:#e8eaf6;border-radius:8px;padding:14px 18px;">
+    <div style="font-size:12px;font-weight:700;color:#283593;margin-bottom:8px;">🏢 事業開発部の責任詳細（PHASE 0 確定事項）</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:11px;">
+      <div style="background:white;border-radius:6px;padding:10px;border-top:3px solid #3949ab;">
+        <strong>① サービスの方向性</strong>
+        <div style="color:var(--gray-mid);margin-top:4px;">SmartKujiをどのようなサービスとして位置づけるか。対象クライアントの規模・業種・課題感。PHP版リニューアルで何を実現するのかのビジョン設定</div>
+      </div>
+      <div style="background:white;border-radius:6px;padding:10px;border-top:3px solid #5c6bc0;">
+        <strong>② 差別化ポイントの定義</strong>
+        <div style="color:var(--gray-mid);margin-top:4px;">競合（クロワッサン・電通TONARIWA等）に対する優位性の特定と優先順位付け。クジラロジック・景品表示法対応・参加方式5種など「外せない強み」の確定</div>
+      </div>
+      <div style="background:white;border-radius:6px;padding:10px;border-top:3px solid #7986cb;">
+        <strong>③ ターゲティング・ポジショニング</strong>
+        <div style="color:var(--gray-mid);margin-top:4px;">誰に・どんな課題解決として・どの価格帯で売るのかを定義。営業部が訴求すべき顧客像と訴求シナリオの基本方針を確定させる</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ===== 14. スケジュール詳細 ===== -->
@@ -1133,6 +1386,12 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <td><span class="person-chip pc-onishi">大西</span> <span class="person-chip pc-oiwa">大岩</span> <span class="person-chip pc-ito">伊藤</span> <span class="person-chip pc-nishiwaki">西脇</span></td>
       </tr>
       <tr>
+        <td><strong>2026/7/14〜7/24</strong><br><span class="tag tag-mid">デザイン</span></td>
+        <td>UIデザインプロトタイプ作成（Claude Design）。大西・山崎がユーザー画面・管理画面の主要フローをプロトタイプ化。制作担当への引き渡しデータを整備</td>
+        <td>Claude Designプロトタイプ（参加者画面5種演出・管理ウィザード主要ステップ・結果画面）を完成。制作担当にデザインブリーフ共有</td>
+        <td><span class="person-chip pc-onishi">大西</span> <span class="person-chip pc-yamazaki">山崎</span></td>
+      </tr>
+      <tr>
         <td><strong>2026/7/24</strong></td>
         <td>アプリケーション設計・サーバー設計完了。開発環境（STG）構築完了</td>
         <td>「技術設計・インフラ」シートのアプリケーション欄を完成。Viet-sanに開発環境共有</td>
@@ -1143,6 +1402,12 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
         <td>見積・承認完了</td>
         <td>開発工数・費用見積を大岩さん・FS担当者が承認</td>
         <td><span class="person-chip pc-oiwa">大岩</span> <span class="person-chip pc-fs">FS</span></td>
+      </tr>
+      <tr>
+        <td><strong>2026/8/1〜8/15</strong><br><span class="tag tag-mid">デザイン</span></td>
+        <td>制作担当による最終デザイン仕上げ。Claude Designプロトタイプをベースにピクセルパーフェクトなデザイン成果物を制作。大西・Viet-sanがデザイン確認・修正FB</td>
+        <td>全画面（参加者画面5演出・管理画面主要フロー）のデザインカンプ確定。Viet-sanへのデザイン実装仕様書を共有</td>
+        <td><span class="person-chip pc-seisaku">制作担当</span> <span class="person-chip pc-onishi">大西</span> <span class="person-chip pc-viet">Viet</span></td>
       </tr>
       <tr>
         <td><strong>2026/8/28</strong></td>
@@ -1178,25 +1443,195 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
   </table>
 </div>
 
+<!-- ===== 15. 大西の最優先設計課題 ===== -->
+<div class="section" id="sec15" style="border:2px solid #e65100;">
+  <div class="section-title" style="color:#e65100;border-left-color:#e65100;">
+    <span class="num" style="background:#e65100;">15</span>
+    大西が最優先で検討すべき設計課題
+    <span style="font-size:10px;background:#e65100;color:white;border-radius:4px;padding:2px 8px;margin-left:8px;">設計フェーズ最重要</span>
+  </div>
+  <div style="background:#fff3e0;border-radius:6px;padding:10px 14px;margin-bottom:18px;font-size:11px;color:#5d4037;border-left:3px solid #e65100;">
+    以下の5領域は、バックエンド・インフラ・セキュリティの根幹を決める意思決定事項である。7月中旬の設計完了マイルストーンまでに各領域の方針を確定させ、スプレッドシート「技術設計・インフラ」シートに記録する。決定前に着手した実装は手戻りリスクが高い。
+  </div>
+
+  <!-- ① システム管理画面 vs 企業管理画面 -->
+  <div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:14px;border-top:4px solid #c62828;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span style="font-size:20px;background:#c62828;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">①</span>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#c62828;">システム管理画面 vs 企業管理画面の構造すみ分け</div>
+        <div style="font-size:10px;color:var(--gray-mid);">全体のDB設計・権限設計・URL設計に直結する最上流の決定事項</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:11px;">
+      <div>
+        <div style="font-weight:700;color:var(--gray-dark);margin-bottom:6px;">🔑 決める必要がある主な問い</div>
+        <ul style="margin:0;padding-left:16px;color:var(--gray-dark);line-height:1.7;">
+          <li>WWS（システム管理者）と顧客企業（一般管理者）で操作できる機能の境界はどこか</li>
+          <li>マルチテナント構造か、顧客ごとに独立したDBスキーマか</li>
+          <li>システム管理者のみが触れる設定（クジラロジック確率・シリアル大量発行・グローバル設定）と顧客が触れる設定の仕切り</li>
+          <li>顧客の管理者の中での役割分離（スーパー管理者 / 一般担当 / 閲覧のみ）の粒度</li>
+          <li>代理店経由の案件でのアクセス権設計（代理店→顧客の中間権限をどう扱うか）</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--gray-dark);margin-bottom:6px;">⚠️ 決めないと起きるリスク</div>
+        <ul style="margin:0;padding-left:16px;color:var(--red);line-height:1.7;">
+          <li>DBのテーブル設計・API設計が後から根本変更になる</li>
+          <li>URLルーティング設計の総やり直し</li>
+          <li>権限チェックロジックの二重実装・漏れ</li>
+          <li>顧客へのデータ漏洩リスク（他社CPが見える等）</li>
+        </ul>
+        <div style="margin-top:8px;font-weight:700;color:var(--gray-dark);">📐 検討すべき設計案</div>
+        <div style="font-size:10px;color:var(--gray-mid);">例：<code>/system/</code>（WWS専用）・<code>/admin/</code>（顧客企業）・<code>/api/v1/</code>（共通API）の3層分離。LaravelのGate + Policyで権限を宣言的に管理。tenants テーブルでマルチテナント対応。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ② 機能要件の優先順位・フェーズ分け -->
+  <div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:14px;border-top:4px solid #e65100;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span style="font-size:20px;background:#e65100;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">②</span>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#e65100;">実装可能かつコアな機能要件の優先順位精査（フェーズ分け）</div>
+        <div style="font-size:10px;color:var(--gray-mid);">10/31リリースに入れる機能を確定させる唯一の機会</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:11px;">
+      <div style="background:#ffebee;border-radius:6px;padding:10px;border-top:3px solid #c62828;">
+        <div style="font-weight:700;color:#c62828;margin-bottom:6px;">🔴 Phase 1（v1.0・10/31必達）</div>
+        <div style="font-size:10px;color:var(--gray-dark);">現行Perl版と同等の機能を全てPHPで動かすことを最低ライン。抽選エンジン再設計・5参加方式・5ゲーム演出・管理画面ウィザード化・非同期メール・AWS移行・セキュリティ基盤</div>
+      </div>
+      <div style="background:#fff3e0;border-radius:6px;padding:10px;border-top:3px solid #e65100;">
+        <div style="font-weight:700;color:#e65100;margin-bottom:6px;">🟠 Phase 2（v1.1・2027年Q1）</div>
+        <div style="font-size:10px;color:var(--gray-dark);">新規差別化機能。設定連動型プレビュー自動生成・シリアルコード自動発行・有料くじ（決済）・店舗分割CP・コース選択・商品詳細選択</div>
+      </div>
+      <div style="background:#e8f5e9;border-radius:6px;padding:10px;border-top:3px solid var(--green);">
+        <div style="font-weight:700;color:var(--green);margin-bottom:6px;">🟢 Phase 3（v2.0・将来）</div>
+        <div style="font-size:10px;color:var(--gray-dark);">AI機能（文章生成・画像生成）・マイレージ型・SNS連携強化（X/Instagram）・UGC収集・レシートCP高度化・多言語対応</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;background:#fff8e1;border-radius:6px;padding:8px 12px;font-size:11px;border-left:3px solid var(--yellow);">
+      <strong>⚠️ 精査の視点：</strong>①Perl版で既に動いていること（移植）と②新規実装（リスク）を明確に分離する。新規機能は全てPhase 2以降に積極的に移す判断が10/31リリースの安全弁になる。
+    </div>
+  </div>
+
+  <!-- ③ サーバー・ドメイン・URL設計 -->
+  <div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:14px;border-top:4px solid #f57f17;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span style="font-size:20px;background:#f57f17;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">③</span>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#f57f17;">サーバー設計 ・ ドメイン・URL設計</div>
+        <div style="font-size:10px;color:var(--gray-mid);">インフラ費用・移行計画・SEO・既存顧客への影響に直結</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:11px;">
+      <div>
+        <div style="font-weight:700;color:var(--gray-dark);margin-bottom:6px;">🔑 サーバー設計の論点</div>
+        <ul style="margin:0;padding-left:16px;color:var(--gray-dark);line-height:1.7;">
+          <li>ECS（常駐コンテナ）vs Lambda（サーバーレス）vs EC2の選択。コールドスタートと高負荷の両立</li>
+          <li>Aurora の Read Replica をどの処理に使うか（抽選結果参照・当選者一覧取得など）</li>
+          <li>Redis の用途分離（セッション / キャッシュ / 事前抽選結果キュー）</li>
+          <li>現行Perl環境との並行稼働期間の設計（新旧切り替えタイミング・ロールバック計画）</li>
+          <li>SQS Dead Letter Queue とリトライ戦略（メール失敗時の処理）</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;color:var(--gray-dark);margin-bottom:6px;">🔑 ドメイン・URL設計の論点</div>
+        <ul style="margin:0;padding-left:16px;color:var(--gray-dark);line-height:1.7;">
+          <li>現行 <code>kuji.smartpr.jp/{cp_id}/</code> との互換性維持か、新URL体系か（既存QRコード・印刷物への影響）</li>
+          <li>管理画面・参加者画面・APIのサブドメイン分割設計（例：<code>admin.kuji.jp</code> / <code>cp.kuji.jp</code> / <code>api.kuji.jp</code>）</li>
+          <li>顧客独自ドメイン対応（<code>cp.client.co.jp</code>）のためのALB + 証明書管理設計</li>
+          <li>RESTful API バージョニング（<code>/api/v1/</code>）の将来移行計画</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ④ セキュリティ設計 -->
+  <div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:14px;border-top:4px solid #6a1b9a;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span style="font-size:20px;background:#6a1b9a;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">④</span>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#6a1b9a;">セキュリティ設計</div>
+        <div style="font-size:10px;color:var(--gray-mid);">ISMS・Pマーク維持・景品表示法準拠・不正対策の全てに関わる</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:11px;">
+      <div>
+        <div style="font-weight:700;color:#6a1b9a;margin-bottom:4px;">🔐 認証・認可設計</div>
+        <ul style="margin:0;padding-left:14px;color:var(--gray-dark);line-height:1.6;">
+          <li>Laravel Sanctum（SPA向け）vs Passport（OAuth2）の選択</li>
+          <li>管理者ログインの2要素認証（2FA）要否</li>
+          <li>セッション固定化攻撃・セッションハイジャック対策</li>
+          <li>API認証トークンの有効期限・リフレッシュ設計</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;color:#6a1b9a;margin-bottom:4px;">🛡️ 不正参加・シリアル不正対策</div>
+        <ul style="margin:0;padding-left:14px;color:var(--gray-dark);line-height:1.6;">
+          <li>シリアルコードの総当たり攻撃対策（レート制限・ロックアウト）</li>
+          <li>同一IPからの大量エントリー検知・遮断（WAF連携）</li>
+          <li>捨てアドレスドメインブロックリストの自動更新</li>
+          <li>reCAPTCHA v3 → v3 Enterprise への移行検討</li>
+          <li>ワンタイムURLの署名検証・有効期限</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;color:#6a1b9a;margin-bottom:4px;">🔒 データ保護・法令対応</div>
+        <ul style="margin:0;padding-left:14px;color:var(--gray-dark);line-height:1.6;">
+          <li>AWS Secrets Manager への全認証情報移行（db.pl廃止）</li>
+          <li>当選者個人情報の暗号化保存・保存期間ポリシー</li>
+          <li>ISMS継続審査に向けたログ管理・監査証跡設計</li>
+          <li>景品表示法準拠：在庫出し切りの自動担保設計（確率0化 vs 在庫フラグ）</li>
+          <li>XSS / CSRF / SQLインジェクション / SSRF 対策の網羅的チェックリスト</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ 負荷対策 -->
+  <div style="background:white;border-radius:8px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,0.08);border-top:4px solid #1565c0;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span style="font-size:20px;background:#1565c0;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">⑤</span>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#1565c0;">負荷対策</div>
+        <div style="font-size:10px;color:var(--gray-mid);">目標：同時10,000アクセス・p95レイテンシ2秒以内・1,000 RPS負荷試験クリア</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:11px;">
+      <div>
+        <div style="font-weight:700;color:#1565c0;margin-bottom:6px;">🏗️ アーキテクチャレベルの負荷対策</div>
+        <ul style="margin:0;padding-left:16px;color:var(--gray-dark);line-height:1.7;">
+          <li><strong>LOCK TABLES廃止の代替設計</strong>：Redis <code>SET NX EX</code> による原子的在庫確保 or 楽観ロック（バージョン番号による競合検知）のどちらを採用するか決定する</li>
+          <li><strong>事前抽選結果生成のタイミング</strong>：CP公開時・在庫追加時・バッチ夜間生成のいずれにするか。生成失敗時のフォールバック設計</li>
+          <li><strong>Aurora Read Replica の活用範囲</strong>：当選者一覧・分析系クエリをReplicaへ向けるルーティング設計</li>
+          <li><strong>Auto Scaling のトリガー設計</strong>：CPU使用率 vs RPS vs SQSキュー深度の組み合わせ</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-weight:700;color:#1565c0;margin-bottom:6px;">🧪 負荷試験設計</div>
+        <ul style="margin:0;padding-left:16px;color:var(--gray-dark);line-height:1.7;">
+          <li><strong>試験シナリオ</strong>：LINE告知後の瞬間スパイク（1分で10,000接続）・持続負荷（30分 1,000 RPS）・シリアル認証集中</li>
+          <li><strong>ツール選定</strong>：k6 / Locust / JMeterのいずれか。CI連携による回帰試験の組み込み</li>
+          <li><strong>合格基準の定義</strong>：エラー率 <0.1%・p95レイテンシ <2秒・DB接続エラーゼロ</li>
+          <li><strong>キャッシュ戦略</strong>：CP設定のRedisキャッシュ有効期限・CloudFront TTL設定・キャッシュバスティング設計</li>
+          <li><strong>コネクションプール設計</strong>：PHP-FPM × Aurora の最大コネクション数上限の計算と設定値の決定</li>
+        </ul>
+        <div style="margin-top:8px;background:#e3f2fd;border-radius:6px;padding:8px 10px;border-left:3px solid #1565c0;">
+          <strong>📌 試験タイミング：</strong>9/11 STGテスト開始と同時に負荷試験を実施。10/2 FB対応完了時点で合格基準を満たすこと。
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <div class="footnote">
   SmartKuji PHP版バージョンアップ プロジェクト総合資料 v1.0 ― スプレッドシート「SmartKuji PHP版バージョンアップ プロジェクトシート」の内容を反映<br>
   次版：v1.1（要件定義・技術設計・インフラシート完成後に更新）
 </div>
 </div>
-</template>
-<script>
-(function () {
-  var code = prompt("アクセスコードを入力してください");
-  var denied = document.getElementById("access-denied");
-  var tpl = document.getElementById("page-content");
-  if (code === "kuji2026") {
-    denied.remove();
-    document.body.appendChild(tpl.content.cloneNode(true));
-  } else {
-    denied.style.display = "block";
-  }
-  tpl.remove();
-})();
-</script>
 </body>
 </html>
+
