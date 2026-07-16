@@ -257,22 +257,22 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 
 <!-- ===== 1. プロジェクト目的 ===== -->
 <div class="section" id="sec1">
-  <div class="section-title"><span class="num">1</span>プロジェクト目的・背景<span class="anno-inline-red">（案）</span></div>
+  <div class="section-title"><span class="num">1</span>プロジェクト目的・背景</div>
   <div class="purpose-grid">
     <div class="purpose-card">
       <div class="pc-num">①</div>
-      <div class="pc-title">⚡ 安定稼働の実現</div>
-      <div class="pc-body">現状ピーク時（スタジアム入場直後・大手LINE告知後）に落ちる抽選処理を改善し、<strong>同時1万アクセスでも安定稼働</strong>させる。おとなサントリーなどLINE友だち100万人超の告知にも耐えるシステムへ。</div>
+      <div class="pc-title">🏢 大口チェーン・多店舗クライアントの獲得（基盤刷新）</div>
+      <div class="pc-body">高負荷・瞬間集中アクセスに耐え、店舗単位の分割運用が可能な基盤へ刷新し、これまで受けられなかった大口案件に対応する。<br><br>・サーバ構成のスケーラブル化（AWS Lambda等）<br>・抽選方式の変更（都度抽選 → 結果の先出し・固定化）<br>・PHP/Laravel化によるメンテナンス性向上（Perl脱却）</div>
     </div>
     <div class="purpose-card" style="border-top-color:var(--green);">
       <div class="pc-num" style="color:var(--green);">②</div>
-      <div class="pc-title">🛠️ 開発の手離れ実現</div>
-      <div class="pc-body"><strong>営業が新キャンペーンを自分で設定できる</strong>ようにし、開発依頼をゼロに近づける。8画面以上に分散した管理UIをウィザード化し、専門知識不要で設定完走できる状態へ。</div>
+      <div class="pc-title">✨ 演出・フローの自由度と使いやすさによる差別化</div>
+      <div class="pc-body">演出の質とキャンペーンフローの拡張性、運用のしやすさで「選ばれる理由」を作る。<br><br>・抽選・当落演出のバリエーション拡充<br>・フローを自由に組める仕組み（事前景品選択、色等の細かい選択、差し込み画面の追加・並べ替え）<br>・管理画面のウィザード化・チュートリアル形式による可視化と設置の省力化</div>
     </div>
     <div class="purpose-card" style="border-top-color:var(--teal);">
       <div class="pc-num" style="color:var(--teal);">③</div>
-      <div class="pc-title">🔧 保守性・拡張性の確立</div>
-      <div class="pc-body"><s class="strike-red-line">Perl 5</s><span class="anno-inline-red">make_perl</span>（EOL）から<strong>PHP Laravel</strong>へ移行し、メンテナンス可能なメンバーを増やす。CI/CD・自動テスト・Secrets管理を整備し、継続改善できる基盤を作る。</div>
+      <div class="pc-title">🤖 AIによる新機能の創出</div>
+      <div class="pc-body">・AIによる確率調整<br>・AIによるオリジナル演出の生成<br>・AIによる利用者分析（次回につながる提案など）</div>
     </div>
   </div>
   <div class="card">
@@ -343,7 +343,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 
 <!-- ===== 3. 競合との差別化 ===== -->
 <div class="section" id="sec3">
-  <div class="section-title"><span class="num">3</span>競合との差別化ポイント<span class="anno-inline-red">（※機能は案です）</span></div>
+  <div class="section-title"><span class="num">3</span>競合との差別化ポイント</div>
   <div class="section-note">📌 現行LPの実測値・公開スペックをもとに分析。<a href="https://kuji.smartpr.jp/" style="color:var(--blue-mid);">現行SmartKuji LP</a>より引用。</div>
 
   <!-- 現行 vs バージョンアップ後 ビフォーアフター -->
@@ -484,7 +484,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
       </thead>
       <tbody>
         <tr>
-          <td><strong>⚡ 大規模同時アクセス</strong></td>
+          <td style="background:#fff9c4;"><strong>⚡ 大規模同時アクセス</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">目標10,000同時</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">サーバー増強<br>オプション対応</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">SNS基盤依存</span></td>
@@ -524,7 +524,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
         </tr>
         <tr>
-          <td><strong>🎰 クジラロジック<br>（確率スケジュール）</strong></td>
+          <td style="background:#fff9c4;"><strong>🎰 クジラロジック<br>（確率スケジュール）</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">日時別確率自動切替<br>在庫管理・スケジュール</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">確率変更は<br>手動・管理画面<br>コードカテゴリ<br>識別あり</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span><br><span style="font-size:10px;color:var(--red);">確率スケジュール<br>非対応</span></td>
@@ -554,7 +554,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
         </tr>
         <tr>
-          <td><strong>🎨 フロー自由設計</strong></td>
+          <td style="background:#fff9c4;"><strong>🎨 フロー自由設計</strong></td>
           <td class="our-col"><span class="circle">◎</span><br><span style="font-size:10px;">自由なフロー組み立て</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">オリジナル<br>デザイン対応<br>アニメ・音声も可</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">CMS形式で<br>特設ページ設定可</span></td>
@@ -564,7 +564,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">コスト高</span></td>
         </tr>
         <tr>
-          <td><strong>🧙 管理画面の使いやすさ</strong></td>
+          <td style="background:#fff9c4;"><strong>🧙 管理画面の使いやすさ</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">ウィザード化（新）</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span><br><span style="font-size:10px;">不明</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="circle">◎</span><br><span style="font-size:10px;color:var(--green);">CMS形式で<br>直感的・簡単設定</span></td>
@@ -604,7 +604,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
           <td style="background:#fafafa;font-size:11px;"><span class="triangle">△</span></td>
         </tr>
         <tr>
-          <td><strong>🔒 セキュリティ認証</strong></td>
+          <td style="background:#fff9c4;"><strong>🔒 セキュリティ認証</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">ISO 27001・Pマーク<br>AWS Shield/WAF</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">ISMS認証<br>Pマーク取得</span></td>
           <td style="background:#fafafa;font-size:11px;">◯<br><span style="font-size:10px;">ISO 27001<br>取得</span></td>
@@ -614,7 +614,7 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
         </tr>
         <tr>
-          <td><strong>🤖 AI機能</strong></td>
+          <td style="background:#fff9c4;"><strong>🤖 AI機能</strong></td>
           <td class="our-col">◯<br><span style="font-size:10px;">将来実装<br>（文章/画像生成）</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
           <td style="background:#fafafa;font-size:11px;"><span class="cross">✕</span></td>
@@ -1634,4 +1634,3 @@ body{font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN',sans-serif;b
 </div>
 </body>
 </html>
-
